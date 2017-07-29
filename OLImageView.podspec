@@ -27,4 +27,10 @@ Pod::Spec.new do |s|
     ss.dependency 'AFNetworking', '~> 2.0'
     ss.source_files = "AFNetworking/OL*.{h,m}"
   end
+  s.subspec 'AFNetworking3' do |ss|
+    s.platform = :ios, '7.0'
+    ss.dependency 'OLImageView/Core'
+    ss.dependency 'AFNetworking', '~> 3.0'
+    ss.source_files = "AFNetworking/OL*.{h,m}"
+  end
 end
